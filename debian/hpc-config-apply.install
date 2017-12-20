@@ -1,0 +1,2 @@
+scripts/hpc-config-apply              usr/sbin
+init/systemd/hpc-config-apply.service lib/systemd/system

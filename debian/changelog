@@ -1,0 +1,5 @@
+hpc-config (1.1.5-0sci8u1) scibian8; urgency=medium
+
+  * Initial scibian8 release.
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Tue, 19 Dec 2017 15:32:12 +0100
