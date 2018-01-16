@@ -1,3 +1,10 @@
+hpc-config (1.1.6-0sci8u1) scibian8; urgency=medium
+
+  * Imported Upstream version 1.1.6
+  * h-c-push: S3: Not removing remote files but update
+
+ -- Thomas Hamel <thomas-externe.hamel@edf.fr>  Tue, 16 Jan 2018 15:11:38 +0100
+
 hpc-config (1.1.5-0sci8u1) scibian8; urgency=medium
 
   * Initial scibian8 release.
