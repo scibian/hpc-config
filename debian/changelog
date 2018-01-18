@@ -1,3 +1,10 @@
+hpc-config (1.1.6-0-sci8u2) scibian8; urgency=medium
+
+  * Update Maintainer to match scibian conventions
+  * Add missing Vcs-* fields in d/control
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Thu, 18 Jan 2018 11:41:19 +0100
+
 hpc-config (1.1.6-0sci8u1) scibian8; urgency=medium
 
   * Imported Upstream version 1.1.6
