@@ -5,6 +5,8 @@ Maintainer: Scibian Project <packaging@scibian.org>
 Build-Depends: debhelper (>= 9), dh-systemd (>= 1.5)
 Standards-Version: 3.9.6
 Homepage: https://github.com/edf-hpc/puppet-hpc
+Vcs-Git: https://github.com/scibian/hpc-config.git
+Vcs-Browser: https://github.com/scibian/hpc-config
 
 Package: hpc-config-apply
 Architecture: all
