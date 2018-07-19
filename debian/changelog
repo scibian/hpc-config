@@ -1,3 +1,9 @@
+hpc-config (1.1.7-0sci9u1) scibian9; urgency=medium
+
+  * hpc-config-apply verbose by default when stdout is TTY ( https://github.com/edf-hpc/hpc-config/issues/3 )
+
+ -- Nicolas Meaux <nicolas-externe.meaux@edf.fr>  Thu, 19 Jul 2018 14:23:35 +0200
+
 hpc-config (1.1.6-0sci9u1) scibian9; urgency=medium
 
   * Scibian9 Release.
