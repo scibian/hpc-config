@@ -1,3 +1,9 @@
+hpc-config (1.1.8-0sci8u1) scibian8; urgency=medium
+
+  * correct a bug on verbosity > 1 in tty 
+
+ -- Nicolas Meaux <nicolas-externe.meaux@edf.fr>  Thu, 19 Jul 2018 17:25:55 +0200
+
 hpc-config (1.1.7-0sci8u1) scibian8; urgency=medium
 
   * hpc-config-apply verbose by default when stdout is TTY ( https://github.com/edf-hpc/hpc-config/issues/3 )
