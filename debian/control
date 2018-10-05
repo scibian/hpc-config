@@ -15,9 +15,10 @@ Depends:
  clustershell,
  hiera-eyaml,
  lsb-release,
- puppet,
+ puppet | puppet4,
  python3,
- python3-urllib3
+ python3-urllib3,
+ python3-yaml
 Description: Download and apply the Puppet HPC Configuration
  Puppet HPC Configuration is a collection of puppet modules and hiera
  configuration designed to install an HPC cluster.
