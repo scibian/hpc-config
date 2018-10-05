@@ -6,6 +6,30 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.0.0]
+
+### Changed
+- h-c-{push,apply}: propagate cluster-node-classifier ENC script input file
+  instead of external fact YAML file
+- h-c-push: generate separate configuration environment for all areas, with
+  on-the-fly/parallel re-encryptions.
+- h-c-apply: download the configuration environment of a specific area
+
+### Added
+- Introduce new script cluster-node-classifier designed to be used as ENC
+- h-c-apply: generate static external fact for private\_files\_dir
+- h-c-push: add ability to list pushed environments
+
+### Fixed
+- h-c-apply: fix retry loop when fixed source port (<1024) is already used by
+  another TCP connection.
+- h-c-apply: add missing explanation in manpage for output and TTY (fix #3)
+
+## [1.1.7] - 2018-07-20
+
+### Changed
+- h-c-apply: be verbose by default when stdout is TTY
+
 ## [1.1.6] - 2018-01-16
 
 ### Changed
