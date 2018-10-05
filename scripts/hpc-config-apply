@@ -548,7 +548,6 @@ if __name__ == "__main__":
 
     params = get_parameters()
 
-    verbosity = params['verbosity']
     environment = params['environment']
     keys_source = params['keys_source']
     source = params['source']
@@ -559,8 +558,10 @@ if __name__ == "__main__":
     keep = params['keep']
     profile = params['profile']
 
-    if stdout.isatty() and verbosity == 0:
+    if stdout.isatty():
         verbosity = 1
+    else:
+        verbosity = params['verbosity']
     
     setup_logging(verbosity)
     logging.debug("Parameters: %s.", params)
