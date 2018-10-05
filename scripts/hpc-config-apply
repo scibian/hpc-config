@@ -37,8 +37,6 @@ import io
 import shutil
 import platform
 
-from sys import stdout
-
 distribution = platform.dist()[0]
 distribution_version = platform.dist()[1]
 
@@ -547,6 +545,9 @@ if __name__ == "__main__":
     locale.setlocale(locale.LC_ALL, LOCALE)
 
     params = get_parameters()
+    verbosity = params['verbosity']
+    setup_logging(verbosity)
+    logging.debug("Parameters: %s.", params)
 
     environment = params['environment']
     keys_source = params['keys_source']
@@ -557,14 +558,6 @@ if __name__ == "__main__":
     tmpdir = params['tmpdir']
     keep = params['keep']
     profile = params['profile']
-
-    if stdout.isatty():
-        verbosity = 1
-    else:
-        verbosity = params['verbosity']
-    
-    setup_logging(verbosity)
-    logging.debug("Parameters: %s.", params)
 
     get_keys(keys_source)
 
