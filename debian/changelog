@@ -1,3 +1,12 @@
+hpc-config (2.0.0-0sci9u1) scibian9; urgency=medium
+
+  * New upstream release 2.0.0
+  * Add dir /etc/hpc-config on apply side as well
+  * Install new ENC script with hpc-config-apply
+  * Update deps of h-c-apply in d/control
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Fri, 05 Oct 2018 15:40:08 +0200
+
 hpc-config (1.1.6-0sci9u1) scibian9; urgency=medium
 
   * Scibian9 Release.
