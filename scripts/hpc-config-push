@@ -25,6 +25,7 @@
 # <http://www.gnu.org/licenses/>.
 
 import os
+import fnmatch
 import argparse
 import configparser
 from io import StringIO
