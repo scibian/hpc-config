@@ -1,3 +1,9 @@
+hpc-config (2.0.3-0sci8u1) scibian8; urgency=medium
+
+  * retag
+
+ -- M'hamed Bouaziz <mb6df44n@dsp0897644.atlas.edf.fr>  Tue, 29 Jan 2019 15:36:51 +0100
+
 hpc-config (2.0.2-0sci8u1) scibian8; urgency=medium
 
   * import fnmath
