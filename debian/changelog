@@ -1,3 +1,9 @@
+hpc-config (2.0.1-0sci8u1.1) scibian8; urgency=medium
+
+  * Glob doesn't support recursive mode in python3 < 3.5
+
+ -- M'hamed Bouaziz <mhamed-externe.bouaziz@edf.fr>  Tue, 29 Jan 2019 15:17:06 +0100
+
 hpc-config (2.0.0-0sci8u1) scibian8; urgency=medium
 
   * New upstream version. 
