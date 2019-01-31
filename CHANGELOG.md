@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.0.1]
+
+### Fixed
+- h-c-push: use os.walk with fnmatch to find encrypted files
+
 ## [2.0.0]
 
 ### Changed
