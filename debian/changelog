@@ -1,3 +1,10 @@
+hpc-config (2.0.3-0sci8u1) scibian8; urgency=medium
+
+  * Imported Upstream release 2.0.3
+  * h-c-push: use key's digest type sha256 for encryption and decryption of files
+
+ -- Mouad BAHI <mouad-externe.bahi@edf.fr>  Mon, 16 Dec 2019 18:13:01 +0100
+
 hpc-config (2.0.1-0sci8u1) scibian8; urgency=medium
 
   * Imported Upstream version 2.0.1.
