@@ -1,4 +1,4 @@
-hpc-config (2.0.3-0sci9u1) UNRELEASED; urgency=medium
+hpc-config (2.0.3-0sci9u1) scibian9; urgency=medium
 
   * New upstream release 2.0.3
   * h-c-push: use key's digest type sha256 for encryption and decryption of files
