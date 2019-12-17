@@ -593,7 +593,7 @@ if __name__ == "__main__":
 
     if stdout.isatty() and verbosity == 0:
         verbosity = 1
-    
+
     setup_logging(verbosity)
     logging.debug("Parameters: %s.", params)
 
