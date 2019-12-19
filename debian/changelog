@@ -1,3 +1,10 @@
+hpc-config (2.0.4-0sci8u1) scibian8; urgency=medium
+
+  * Imported Upstream version 2.0.4
+  * h-c-push: fix "Unknown digest" error in openssl call with -md option
+
+ -- Mouad BAHI <mouad-externe.bahi@edf.fr>  Thu, 19 Dec 2019 16:13:59 +0100
+
 hpc-config (2.0.3-0sci8u2) scibian8; urgency=medium
 
   * This version import the real upstream using git merge.
