@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### [Unreleased]
 
+## [2.0.4]
+
+### Fixed
+- h-c-push: fix "Unknown digest" error in openssl call with -md option
+
+## [2.0.3]
+
+### Fixed
+- Fix mismatching version and tag in 2.0.1 
+
 ## [2.0.2]
 
 ### Changed
