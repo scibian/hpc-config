@@ -1,3 +1,9 @@
+hpc-config (2.0.4-0sci8u2) scibian8; urgency=medium
+
+  * Fix failure of creation of directory /etc/hpc-config
+
+ -- Mouad BAHI <mouad-externe.bahi@edf.fr>  Mon, 13 Jan 2020 19:28:28 +0100
+
 hpc-config (2.0.4-0sci8u1) scibian8; urgency=medium
 
   * Imported Upstream version 2.0.4
