@@ -47,7 +47,7 @@ rm -rf %{buildroot}
 
 %package apply
 Summary: %{name}-apply script to deploy the configuration on a node
-Requires: python3, python3-pyyaml, python3-urllib3
+Requires: python3, python3-pyyaml, python3-urllib3, python3-paramiko
 
 %description apply
 This package provide the hpc-config-apply script necessary to deploy the
@@ -65,8 +65,8 @@ It also provide a service file that applies it during the boot sequence.
 
 
 %package push
-Summary: %{name}-apply script to deploy the configuration on a node
-Requires: python3, python3-pyyaml, python3-urllib3
+Summary: %{name}-push script to deploy the configuration on a node
+Requires: python3, python3-pyyaml, python3-urllib3, python3-paramiko, rubygem-hiera-eyaml
 
 %description push
 This package provide the hpc-config-push script to push the configuration
