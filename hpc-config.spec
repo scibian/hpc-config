@@ -3,13 +3,14 @@
 %define debug_package %{nil}
 
 Name:		hpc-config
-Version:	3.0.0
+Version:	3.0.1
 Release:	1%{?dist}
 License:	GPLv2+
 Summary:	Suite of utilities to deploy HPC clusters generic configuration
 URL:		https://github.com/scibian/hpc-config
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+BuildRequires: python3, python3-pyyaml, python3-urllib3, python3-paramiko, python3-GitPython, rubygem-hiera-eyaml
 
 %description
 hpc-config is a suite of utilities to ease deployment of Puppet-HPC, a
@@ -27,12 +28,12 @@ organizations.
 ##}
 
 %build
+%{__python3} setup.py build --build-scripts=%{_sbindir}
 
 %install
 #rm -rf %{buildroot} # for git
 #cd %{name}-%{version} # for git
 install -m 755 -d %{buildroot}%{_sbindir}
-install -m 755 scripts/%{name}-* %{buildroot}%{_sbindir}
 install -m 755 -d %{buildroot}%{__unit_dir}
 install -m 755 -d %{buildroot}%{_sysconfdir}/%{name}
 install -m 755 init/systemd/%{name}-apply.service %{buildroot}%{__unit_dir}
@@ -40,7 +41,9 @@ install -m 755 README.md CHANGELOG.md %{_builddir}
 install -m 755 -d %{buildroot}%{_mandir}
 install -m 755 doc/manpages/%{name}-*.1 %{buildroot}%{_mandir}
 install -m 755 -d %{buildroot}%{__lib_dir}/%{name}/exec
-install -m 755 scripts/cluster-node-classifier %{buildroot}%{__lib_dir}/%{name}/exec
+install -m 755 hpcconfig/cluster-node-classifier %{buildroot}%{__lib_dir}/%{name}/exec
+%{__python3} setup.py install --install-scripts=%{_sbindir} --root %{buildroot}
+
 
 %clean
 rm -rf %{buildroot}
@@ -66,7 +69,7 @@ It also provide a service file that applies it during the boot sequence.
 
 %package push
 Summary: %{name}-push script to deploy the configuration on a node
-Requires: python3, python3-pyyaml, python3-urllib3, python3-paramiko, rubygem-hiera-eyaml
+Requires: python3, python3-pyyaml, python3-urllib3, python3-paramiko, python3-GitPython, rubygem-hiera-eyaml
 
 %description push
 This package provide the hpc-config-push script to push the configuration
@@ -77,8 +80,13 @@ on a central location or a set of servers.
 %doc README.md CHANGELOG.md
 %{_sbindir}/hpc-config-push
 %{_mandir}
+%{python3_sitelib}/*
 
 %changelog
+
+* Fri Oct 30 2020 Guillaume RANQUET <guillaume-externe.ranquet@edf.fr> - 3.0.1
+- New release 3.0.1
+- Use python setuptools to build/install
 
 * Mon Sep 21 2020 Thomas HAMEL <thomas-t.hamel@edf.fr> - 3.0.0
 - New release 3.0.0
