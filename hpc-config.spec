@@ -1,15 +1,16 @@
 %{!?__unit_dir:%global __unit_dir /etc/systemd/system}
 %{!?__lib_dir:%global __lib_dir /usr/lib}
-%define debug_package %{nil}
 
 Name:		hpc-config
-Version:	3.0.0
+Version:	3.0.1
 Release:	1%{?dist}
 License:	GPLv2+
 Summary:	Suite of utilities to deploy HPC clusters generic configuration
 URL:		https://github.com/scibian/hpc-config
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+
+%global debug_package %{nil}
 
 %description
 hpc-config is a suite of utilities to ease deployment of Puppet-HPC, a
@@ -20,7 +21,7 @@ organizations.
 
 %prep
 #[ -f %{_sourcedir}/%{name}-%{version}.tar.gz ] &&
-%setup -q
+%setup -q -n %{name}
 ##|| {
 #    [ -d %{name}-%{version} ] || git clone %{url}.git %{name}-%{version}
 #    cd %{name}-%{version} # for git
@@ -79,6 +80,10 @@ on a central location or a set of servers.
 %{_mandir}
 
 %changelog
+
+* Tue Oct 20 2020 Nilce BOUSSAMBA <nilce-externe.boussamba@edf.fr> - 3.0.1
+- New release 3.0.1
+- modify node-classifier to handle multiple areas
 
 * Mon Sep 21 2020 Thomas HAMEL <thomas-t.hamel@edf.fr> - 3.0.0
 - New release 3.0.0
