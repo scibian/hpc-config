@@ -61,9 +61,11 @@ def get_noderole(prefix, nodename):
 
 def get_nodearea(areas, role, nodename):
 
+    list = nodename.split(".")
+    node = list[0]
     for area, descriptors in areas.items():
         for descriptor in descriptors:
-            if nodename in NodeSet(descriptor):
+            if node in NodeSet(descriptor):
                 return area
             if role == descriptor:
                 return area
