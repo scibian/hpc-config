@@ -2,8 +2,8 @@
 %{!?__lib_dir:%global __lib_dir /usr/lib}
 
 Name:		hpc-config
-Version:	3.0.1
-Release:	1%{?dist}
+Version:	3.0.2
+Release:	2%{?dist}
 License:	GPLv2+
 Summary:	Suite of utilities to deploy HPC clusters generic configuration
 URL:		https://github.com/scibian/hpc-config
