@@ -1,21 +1,23 @@
-hpc-config (2.0.5-0sci9u1) scibian9; urgency=medium
+hpc-config (2.0.5-0sci8u1) scibian8; urgency=medium
 
   * Imported Upstream version 2.0.5
+  * force dependance to puppet5
+  * control: Readd puppet4 as a possible dependency
 
  -- Thomas HAMEL <thomas-externe.hamel@edf.fr>  Wed, 12 May 2021 11:46:19 +0200
 
-hpc-config (2.0.4-0sci9u2) scibian9; urgency=medium
+hpc-config (2.0.4-0sci8u2) scibian8; urgency=medium
 
-  * force dependance to puppet5
+  * Fix failure of creation of directory /etc/hpc-config
 
- -- Kwame AMEDODJI <kwame-externe.amedodji@edf.fr>  Wed, 28 Apr 2021 11:27:23 +0200
+ -- Mouad BAHI <mouad-externe.bahi@edf.fr>  Mon, 13 Jan 2020 19:28:28 +0100
 
-hpc-config (2.0.4-0sci9u1) scibian9; urgency=medium
+hpc-config (2.0.4-0sci8u1) scibian8; urgency=medium
 
-  * New upstream release 2.0.4
+  * Imported Upstream version 2.0.4
   * h-c-push: fix "Unknown digest" error in openssl call with -md option
 
- -- Mouad BAHI <mouad-externe.bahi@edf.fr>  Thu, 19 Dec 2019 16:00:19 +0100
+ -- Mouad BAHI <mouad-externe.bahi@edf.fr>  Thu, 19 Dec 2019 16:13:59 +0100
 
 hpc-config (2.0.3-0sci9u1) scibian9; urgency=medium
 
