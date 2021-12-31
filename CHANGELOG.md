@@ -5,15 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### [Unreleased]
-- apply: Use puppet upstream packaging paths
+
+## [3.0.1]
+
+### Fixed
+- new node classifier as an explicit given role name
+- backport features introduced in rhel8
+- variabilized redhat versus debian puppet paths
+
+## [2.0.6]
+
+### Fixed
+- h-c-apply: Support centos as well as redhat
 
 ## [2.0.5]
 
-### Added
-- h-c.spec: RPM spec file
-
-### Changed
-- Update scripts/conf/manpage from latest debian release
+### Fixed
+- h-c-apply: Fix connection error for scibian8
 
 ## [2.0.4]
 
