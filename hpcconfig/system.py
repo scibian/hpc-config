@@ -25,9 +25,19 @@
 # <http://www.gnu.org/licenses/>.
 
 import platform
+try:
+    import distro
+except:
+    pass
 
 def os_distribution():
-    return platform.dist()[0]
+    try:
+        return platform.dist()[0]
+    except:
+        return distro.name().lower()
 
 def os_major_version():
-    return int(platform.dist()[1].split('.')[0])
+    try:
+        return int(platform.dist()[1].split('.')[0])
+    except:
+        return int(distro.version().split('.')[0])
