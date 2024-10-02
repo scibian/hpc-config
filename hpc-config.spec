@@ -2,7 +2,7 @@
 %{!?__lib_dir:%global __lib_dir /usr/lib}
 
 Name:		hpc-config
-Version:	3.1.3
+Version:	3.1.4
 Release:	1%{?dist}.edf
 License:	GPLv2+
 Summary:	Suite of utilities to deploy HPC clusters generic configuration
@@ -99,6 +99,10 @@ on a central location or a set of servers.
 %{_mandir}/man1/%{name}-push.1.gz
 
 %changelog
+
+* Wed Oct 02 2024 Saran Kaba <saran-externe.kaba@edf.fr> - 3.1.4-1el9.edf
+- New upstream release 3.1.4-1
+- Backport to el9
 
 * Tue Feb 20 2024 Kwame Amedodji <kwame-externe.amedodji@edf.fr> - 3.1.3-1el8.edf
 - New upstream release 3.1.3-1
